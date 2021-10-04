@@ -4,22 +4,204 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <title>practical</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Practical-14</title>
+    <script src="https://kit.fontawesome.com/8e517d223f.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    height: 50%;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    color: black;
+    margin-right: 20px;
+}
+
+
+table{
+    border: 3px grey;
+    width: 100%;
+}
+ tr:nth-child(odd){
+    background-image: linear-gradient(to right,rgb(111, 196, 146),rgb(112,172,207));
+}
+
+
+th,td{
+    padding: 15px;
+    border: 2px darkgray;
+}
+
+th{
+    height: 30px;
+    font-size: 30px;
+    color: purple;
+}
+
+th li{
+    color: gray;
+    list-style: none;
+    display: inline-flex;
+    float: left;
+}
+
+.fa-check{
+    color: green;
+}
+
+.fa-times{
+    color: red;
+}
+
+
+tr{
+    height: 30px;
+}
+
+.button{
+    margin-left: 30px;
+    margin-right: 10px;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+    padding: 5px 5px;
+
+}
+.button:hover{
+    color: red;
+}
+    </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th colspan="9">SELECT YOUR PLAN</th>
-            </tr>
-            <tr>
-                <th>
-                    <span class="fa fa "></span>
-                    Basic
-                </th>
-            </tr>
-        </thead>
-    </table>
+    <div class="container">
+        <h2>SELECT YOUR PLAN</h2>
+        <div class="tablecontent">
+            <table>
+                <tr>
+                    <th>
+                        <ul>
+                            <li><i class="fas fa-home"></i></li>
+                        </ul>
+                        Basic
+                    </th>
+                    <th>
+                        <ul>
+                            <li><i class="fas fa-plus"></i></li>
+                        </ul>
+                        Plus
+                    </th>
+                    <th>
+                        <ul>
+                            <li><i class="fas fa-home"></i></li>
+                        </ul>
+                        Deluxe
+                    </th>
+                    <th>
+                        <ul>
+                            <li><i class="fas fa-home"></i></li>
+                        </ul>
+
+                        Pro
+                    </th>
+                </tr>
+                <tr style="color: rgb(130, 219, 130);">
+                    <td>Rs. 500/-</td>
+                    <td>Rs. 1500/-</td>
+                    <td>Rs. 2500/-</td>
+                    <td>Rs. 3500/-</td>
+                </tr>
+                <tr>
+                    <td>50 pages</td>
+                    <td>75 pages</td>
+                    <td> Unlimited</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>3 users</td>
+                    <td>5 users</td>
+                    <td>10 users</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>10 sites</td>
+                    <td>25 sites</td>
+                    <td>100 sites</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>50 MB</td>
+                    <td>250 MB</td>
+                    <td>1 GB</td>
+                    <td>5 GB</td>
+                </tr>
+                <tr>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>   
+                </tr>
+                <tr>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>   
+                </tr>
+                <tr>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>   
+                </tr>
+                <tr>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>   
+                </tr>
+                <tr>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>   
+                </tr>
+                <tr>
+                    <td>
+                       <div class="button">Sign Up</div>
+                    </td>
+                    <td>
+                        <div class="button">Sign Up</div>
+                    </td>
+                    <td>
+                        <div class="button">Sign Up</div>
+                    </td>
+                    <td>
+                        <div class="button">Sign Up</div>
+                     </td>
+
+                </tr>
+               
+            </table>
+
+        </div>
+    </div>
 </body>
 </html>
